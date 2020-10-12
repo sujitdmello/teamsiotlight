@@ -33,6 +33,9 @@ try:
 	GREEN.start(100)
 	time.sleep(5)
 	RUNNING = False
+	BLUE.start(0)
+	RED.start(0)
+	GREEN.start(0)
 	GPIO.cleanup()
 	exit()
 
