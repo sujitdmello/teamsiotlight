@@ -23,7 +23,7 @@ GREEN.start(0)
 BLUE.start(0)
 
 #Initial the dht device, with data pin connected to:
-dhtDevice = adafruit_dht.DHT11(board.D23)
+dhtDevice = adafruit_dht.DHT22(board.D23)
 while True:
      try:
           # Print the values to the serial port
