@@ -1,5 +1,7 @@
 import RPi.GPIO as GPIO
 import time
+import msal
+
 GPIO.setmode(GPIO.BCM)
 
 RUNNING = True
