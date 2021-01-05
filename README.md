@@ -15,3 +15,7 @@ RGB Module: https://www.amazon.com/Colour-Module-Color-tri-Color-Arduino/dp/B07K
 Installation of Python libraries for using the LCD panel: https://learn.adafruit.com/monochrome-oled-breakouts/python-setup  
 
 ![Teams Light](TeamsLight.jpg)
+
+Next step is to migrate the connections and SD card to the Raspberry Pi Zero to make the installation cheaper and sleeker. Then I can use the RPi3 for my next project!
+
+![RPi Zero](rpzero.jpg)
