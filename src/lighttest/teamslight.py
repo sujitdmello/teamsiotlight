@@ -31,9 +31,12 @@ font = ImageFont.truetype('good.ttf', 16)
 # Initialize library.
 disp.begin()
 
-# Clear display.
-disp.clear()
-disp.display()
+def clear_display():
+    # Clear display.
+    disp.clear()
+    disp.display()
+    
+clear_display()
 
 def set_light_color(color):
     if color == 'RED':
@@ -103,6 +106,7 @@ def threaded_task():
     while (True):        
         if lastAwayTime != 0 and time() - lastAwayTime > 300:
             set_light_color('OFF')
+            clear_display()
             lastAwayTime = 0
         if presenting == True:
             if flash == False:
@@ -111,7 +115,7 @@ def threaded_task():
             else:
                 set_light_color('OFF')
                 flash = False
-        sleep(1)
+        sleep(5)
 
 def init_color_board():
     global RED
@@ -138,9 +142,6 @@ def init_color_board():
     BLUE.start(0)    
 
 def display_message(message1, message2, message3):
-
-
-
     # Create blank image for drawing.
     # Make sure to create image with mode '1' for 1-bit color.
     width = disp.width
@@ -173,7 +174,6 @@ def display_message(message1, message2, message3):
     # Display image.
     disp.image(image)
     disp.display()
-
 
 init_color_board()
 
