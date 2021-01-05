@@ -91,7 +91,7 @@ def set_teams_light():
         display_message('Away', 'Be right', 'back')         
     if status == 'Offline':
         set_light_color('OFF')
-        display_message('Offline', 'Gone', 'Fishing!')            
+        display_message('Offline', 'Gone', 'Fishing')            
     return "Set status to " + status,200
 
 def threaded_task():
