@@ -12,4 +12,6 @@ LCD panel: https://www.amazon.com/gp/product/B072Q2X2LL
 
 RGB Module: https://www.amazon.com/Colour-Module-Color-tri-Color-Arduino/dp/B07KNTTQ1M/
 
+Installation of Python libraries for using the LCD panel: https://learn.adafruit.com/monochrome-oled-breakouts/python-setup  
+
 ![Teams Light](TeamsLight.jpg)
